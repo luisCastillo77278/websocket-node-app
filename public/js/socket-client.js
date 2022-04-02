@@ -22,8 +22,8 @@ socketClient.on('disconnect', ()=>{
 
 });
 
-socketClient.on('enviarMsg', msg =>{
-  console.log('server !!! ', msg);
+socketClient.on('enviarMsg', payload =>{
+  console.log('server !!! ', payload);
 });
 
 btn.addEventListener('click', ()=>{
@@ -31,8 +31,6 @@ btn.addEventListener('click', ()=>{
 
   if(!mensaje) return;
 
-  console.log(mensaje);
-  
   const payload = {
     mensaje,
     fecha: new Date().getTime(),

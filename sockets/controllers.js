@@ -7,19 +7,19 @@ const socketController = (socket) => {
   });
 
 
-  socket.on('msgEnviar', (msg, callback)=>{
+  socket.on('msgEnviar', (payload, callback)=>{
 
     console.log(msg);
 
     // esto envia un dato si todo salio correcto o que se
     // haya guardado en la base de dato y obtener un valor en la DB
-    const id = Date.now();
-    callback({ id, fecha: new Date().getTime() });
+    const id = 123456789;
+    callback({id});
 
     // esto emite un mensaje personalizado a todos
     // excepto al mismo que lo envío.
     // muy diferente a io.emit()
-    socket.broadcast.emit('enviarMsg', msg);
+    socket.broadcast.emit('enviarMsg', payload);
 
   });
 
