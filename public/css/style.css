@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+button  {
+  border: none;
+  background-color: rgb(52, 129, 223);
+  color: #ffff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px black;
+  transition: all 0.3s;
+}
+
+button:hover{
+  box-shadow: 0px 1px 4px black;
+  background-color: rgb(43, 113, 199);
+}
+
+#lblOnline{
+  color: green;
+}
+
+#lblOffline{
+  color: red;
+}
+
+.status {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.694);
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_input input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+
+
